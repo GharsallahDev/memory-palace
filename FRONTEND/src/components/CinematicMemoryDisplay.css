@@ -1,0 +1,496 @@
+/* Text-Only Response (No Cinema) - CLEAN */
+.text-only-response {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 24px;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    text-align: left;
+}
+
+.ai-text {
+    flex: 1;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 400;
+    margin: 0;
+}
+
+/* The main style for our new button */
+.play-narrative-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    flex-shrink: 0;
+    background: linear-gradient(135deg, rgba(156, 39, 176, 0.2), rgba(103, 58, 183, 0.2));
+    border: 1px solid rgba(156, 39, 176, 0.4);
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
+}
+
+.play-narrative-btn:hover:not(:disabled) {
+    background: linear-gradient(135deg, rgba(156, 39, 176, 0.35), rgba(103, 58, 183, 0.35));
+    border-color: rgba(156, 39, 176, 0.6);
+    transform: scale(1.1);
+    box-shadow: 0 4px 20px rgba(156, 39, 176, 0.25);
+}
+
+.play-narrative-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+.btn-icon {
+    transition: transform 0.2s ease;
+}
+
+.btn-icon.spinning {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Post-Cinema Response (After cinema has played) */
+.post-cinema-response {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px;
+    background: linear-gradient(135deg,
+            rgba(15, 15, 15, 0.95),
+            rgba(25, 25, 35, 0.9));
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.cinema-summary {
+    margin-top: 20px;
+    padding: 15px;
+    background: rgba(156, 39, 176, 0.1);
+    border-radius: 10px;
+    border: 1px solid rgba(156, 39, 176, 0.2);
+    display: flex;
+    align-items: center;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.summary-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.summary-icon {
+    font-size: 1.2rem;
+    display: flex;
+}
+
+.summary-text {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 300;
+}
+
+.replay-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(156, 39, 176, 0.2);
+    border: 1px solid rgba(156, 39, 176, 0.4);
+    color: rgba(156, 39, 176, 0.9);
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
+    flex-shrink: 0;
+}
+
+.replay-btn:hover {
+    background: rgba(156, 39, 176, 0.3);
+    border-color: rgba(156, 39, 176, 0.6);
+    transform: translateY(-2px);
+}
+
+/* FULL CINEMA MODE */
+.cinema-fullscreen {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    z-index: 99999 !important;
+    background: radial-gradient(ellipse at center,
+            rgba(10, 10, 20, 1) 0%,
+            rgba(0, 0, 0, 1) 70%) !important;
+    overflow: hidden;
+    cursor: none;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    border-radius: 0 !important;
+    transform: none !important;
+}
+
+/* Cinema Header (Title at Top) */
+.cinema-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100001;
+    background: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0.9),
+            rgba(0, 0, 0, 0.6),
+            transparent);
+    padding: 40px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(15px);
+}
+
+.cinema-title {
+    font-size: 2.5rem;
+    color: white;
+    font-weight: 200;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+    background: linear-gradient(135deg, #ffffff, #e0e0e0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.exit-cinema-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(244, 67, 54, 0.2);
+    border: 2px solid rgba(244, 67, 54, 0.4);
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.exit-cinema-btn:hover {
+    background: rgba(244, 67, 54, 0.5);
+    border-color: rgba(244, 67, 54, 0.8);
+    transform: scale(1.1);
+}
+
+/* Cinema Stage (Main Scene Area) */
+.cinema-stage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 2000px;
+}
+
+.cinema-scene {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform-style: preserve-3d;
+}
+
+/* PHOTO SCENES */
+.photo-scene {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cinema-photo {
+    max-width: 85vw;
+    max-height: 75vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: 20px;
+    box-shadow:
+        0 50px 100px rgba(0, 0, 0, 0.8),
+        0 20px 40px rgba(0, 0, 0, 0.6),
+        inset 0 0 50px rgba(255, 255, 255, 0.1);
+    transform: translateZ(100px);
+}
+
+/* VIDEO SCENES */
+.video-scene {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cinema-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 20;
+}
+
+/* Cinema Subtitle (Center Middle) */
+.cinema-subtitle-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100000;
+    text-align: center;
+    max-width: 80vw;
+    pointer-events: none;
+}
+
+.subtitle-content {
+    background: linear-gradient(135deg,
+            rgba(0, 0, 0, 0.85),
+            rgba(20, 20, 30, 0.9));
+    padding: 40px 50px;
+    border-radius: 25px;
+    backdrop-filter: blur(25px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow:
+        0 30px 80px rgba(0, 0, 0, 0.8),
+        inset 0 0 30px rgba(255, 255, 255, 0.05);
+
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color: white;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+
+    background-image: linear-gradient(45deg,
+            transparent,
+            rgba(156, 39, 176, 0.1),
+            transparent);
+    animation: subtitleGlow 4s ease-in-out infinite;
+}
+
+@keyframes subtitleGlow {
+
+    0%,
+    100% {
+        box-shadow:
+            0 30px 80px rgba(0, 0, 0, 0.8),
+            inset 0 0 30px rgba(255, 255, 255, 0.05);
+    }
+
+    50% {
+        box-shadow:
+            0 30px 80px rgba(0, 0, 0, 0.8),
+            inset 0 0 30px rgba(156, 39, 176, 0.2),
+            0 0 50px rgba(156, 39, 176, 0.3);
+    }
+}
+
+.subtitle-metadata {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+/* === CINEMA PROGRESS INDICATOR === */
+.cinema-progress-indicator {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    z-index: 100002;
+}
+
+.progress-segment {
+    width: 60px;
+    height: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 3px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.progress-segment.active {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.progress-fill {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #e0e0e0, #ffffff);
+    border-radius: 3px;
+    /* This makes the width changes smooth */
+    transition: width 0.1s linear;
+}
+
+
+/* Responsive Cinema Mode */
+@media (max-width: 768px) {
+    .cinema-header {
+        padding: 25px 30px;
+    }
+
+    .cinema-title {
+        font-size: 1.8rem;
+        letter-spacing: 2px;
+    }
+
+    .exit-cinema-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+
+    .cinema-photo {
+        max-width: 95vw;
+        max-height: 70vh;
+    }
+
+    .cinema-video {
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+    }
+
+    .cinema-subtitle-center {
+        max-width: 90vw;
+    }
+
+    .subtitle-content {
+        padding: 25px 30px;
+        font-size: 1.2rem;
+        line-height: 1.6;
+    }
+
+    .subtitle-metadata {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .cinema-header {
+        padding: 20px 20px;
+    }
+
+    .cinema-title {
+        font-size: 1.4rem;
+        letter-spacing: 1px;
+    }
+
+    .cinema-photo {
+        max-width: 98vw;
+        max-height: 65vh;
+    }
+
+    .cinema-video {
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+    }
+
+    .subtitle-content {
+        padding: 20px 25px;
+        font-size: 1.1rem;
+        border-radius: 20px;
+    }
+}
+
+/* High contrast mode */
+@media (prefers-contrast: high) {
+    .cinema-fullscreen {
+        background: #000;
+    }
+
+    .cinema-title {
+        color: white;
+        -webkit-text-fill-color: white;
+    }
+
+    .subtitle-content {
+        background: rgba(0, 0, 0, 0.95);
+        border-color: rgba(255, 255, 255, 0.8);
+    }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+
+    .cinema-scene,
+    .cinema-photo,
+    .video-overlay {
+        animation: none;
+        transition: opacity 0.3s ease;
+    }
+
+    .subtitle-content {
+        animation: none;
+    }
+}

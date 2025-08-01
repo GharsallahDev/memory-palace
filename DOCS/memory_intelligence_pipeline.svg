@@ -1,0 +1,185 @@
+<svg viewBox="0 0 1400 1000" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0" style="stop-color:#f8fafc;stop-opacity:1"></stop>
+      <stop offset="1" style="stop-color:#e2e8f0;stop-opacity:1"></stop>
+    </linearGradient>
+    <linearGradient id="uploadGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0" style="stop-color:#3b82f6;stop-opacity:1"></stop>
+      <stop offset="1" style="stop-color:#1d4ed8;stop-opacity:1"></stop>
+    </linearGradient>
+    <linearGradient id="processGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0" style="stop-color:#10b981;stop-opacity:1"></stop>
+      <stop offset="1" style="stop-color:#047857;stop-opacity:1"></stop>
+    </linearGradient>
+    <linearGradient id="analysisGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0" style="stop-color:#f59e0b;stop-opacity:1"></stop>
+      <stop offset="1" style="stop-color:#d97706;stop-opacity:1"></stop>
+    </linearGradient>
+    <linearGradient id="triggerGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0" style="stop-color:#ef4444;stop-opacity:1"></stop>
+      <stop offset="1" style="stop-color:#dc2626;stop-opacity:1"></stop>
+    </linearGradient>
+    <linearGradient id="experienceGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0" style="stop-color:#8b5cf6;stop-opacity:1"></stop>
+      <stop offset="1" style="stop-color:#7c3aed;stop-opacity:1"></stop>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-opacity="0.3"></feDropShadow>
+    </filter>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"></feGaussianBlur>
+      <feMerge>
+        <feMergeNode in="coloredBlur"></feMergeNode>
+        <feMergeNode in="SourceGraphic"></feMergeNode>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="1400" height="1000" fill="url(#bgGradient)"></rect>
+  <text x="700" y="50" text-anchor="middle" font-family="SF Pro Display, -apple-system, sans-serif" font-size="28" font-weight="600" fill="#1e293b" style="white-space: pre;">Memory Intelligence Pipeline</text>
+  <text x="700" y="80" text-anchor="middle" font-family="SF Pro Display, -apple-system, sans-serif" font-size="16" fill="#64748b" style="white-space: pre;">From Family Upload to Proactive AI Experience</text>
+  <g transform="matrix(1, 0, 0, 1, 146.270889, 151.239319)">
+    <rect width="200" height="140" rx="15" fill="url(#uploadGradient)" filter="url(#shadow)"></rect>
+    <text x="100" y="30" text-anchor="middle" font-family="SF Pro Display, -apple-system, sans-serif" font-size="16" font-weight="600" fill="white" style="white-space: pre;">📱 Family Upload</text>
+    <text x="100" y="50" text-anchor="middle" font-family="SF Pro Display, -apple-system, sans-serif" font-size="14" fill="rgba(255,255,255,0.9)" style="white-space: pre;">iOS Memory Collector</text>
+    <rect x="20" y="65" width="35" height="25" rx="5" fill="rgba(255,255,255,0.2)"></rect>
+    <text x="37" y="80" text-anchor="middle" font-family="SF Pro Display, -apple-system, sans-serif" font-size="10" fill="white" style="white-space: pre;">📸</text>
+    <rect x="60" y="65" width="35" height="25" rx="5" fill="rgba(255,255,255,0.2)"></rect>
+    <text x="77" y="80" text-anchor="middle" font-family="SF Pro Display, -apple-system, sans-serif" font-size="10" fill="white" style="white-space: pre;">🎥</text>
+    <rect x="100" y="65" width="35" height="25" rx="5" fill="rgba(255,255,255,0.2)"></rect>
+    <text x="117" y="80" text-anchor="middle" font-family="SF Pro Display, -apple-system, sans-serif" font-size="10" fill="white" style="white-space: pre;">🎤</text>
+    <rect x="140" y="65" width="35" height="25" rx="5" fill="rgba(255,255,255,0.2)"></rect>
+    <text x="157" y="80" text-anchor="middle" font-family="SF Pro Display, -apple-system, sans-serif" font-size="10" fill="white" style="white-space: pre;">📝</text>
+    <text x="100" y="105" text-anchor="middle" font-family="SF Pro Display, -apple-system, sans-serif" font-size="11" fill="rgba(255,255,255,0.9)" style="white-space: pre;">+ Rich Metadata</text>
+    <text x="100" y="120" text-anchor="middle" font-family="SF Pro Display, -apple-system, sans-serif" font-size="11" fill="rgba(255,255,255,0.9)" style="white-space: pre;">+ Face Detection</text>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, 444.270905, 151.239319)">
+    <rect width="200" height="140" rx="15" fill="url(#processGradient)" filter="url(#shadow)"></rect>
+    <text x="100" y="30" text-anchor="middle" font-family="SF Pro Display, -apple-system, sans-serif" font-size="16" font-weight="600" fill="white" style="white-space: pre;">⚙️ Background AI</text>
+    <text x="100" y="50" text-anchor="middle" font-family="SF Pro Display, -apple-system, sans-serif" font-size="14" fill="rgba(255,255,255,0.9)" style="white-space: pre;">Worker Queue</text>
+    <text x="20" y="75" font-family="SF Pro Display, -apple-system, sans-serif" font-size="11" fill="rgba(255,255,255,0.9)" style="white-space: pre;">✓ Image Captioning (BLIP)</text>
+    <text x="20" y="90" font-family="SF Pro Display, -apple-system, sans-serif" font-size="11" fill="rgba(255,255,255,0.9)" style="white-space: pre;">✓ Audio Transcription</text>
+    <text x="20" y="105" font-family="SF Pro Display, -apple-system, sans-serif" font-size="11" fill="rgba(255,255,255,0.9)" style="white-space: pre;">✓ Vector Embeddings</text>
+    <text x="20" y="120" font-family="SF Pro Display, -apple-system, sans-serif" font-size="11" fill="rgba(255,255,255,0.9)" style="white-space: pre;">✓ Avatar Generation</text>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, 744.270874, 151.239319)">
+    <rect width="200" height="140" rx="15" fill="url(#analysisGradient)" filter="url(#shadow)"></rect>
+    <text x="100" y="30" text-anchor="middle" font-family="SF Pro Display, -apple-system, sans-serif" font-size="16" font-weight="600" fill="white" style="white-space: pre;">🧠 Proactive Analysis</text>
+    <text x="100" y="50" text-anchor="middle" font-family="SF Pro Display, -apple-system, sans-serif" font-size="14" fill="rgba(255,255,255,0.9)" style="white-space: pre;">Gemma 3n Intelligence</text>
+    <text x="20" y="75" font-family="SF Pro Display, -apple-system, sans-serif" font-size="11" fill="rgba(255,255,255,0.9)" style="white-space: pre;">🎂 Anniversary Detection</text>
+    <text x="20" y="90" font-family="SF Pro Display, -apple-system, sans-serif" font-size="11" fill="rgba(255,255,255,0.9)" style="white-space: pre;">🎄 Seasonal Tagging</text>
+    <text x="20" y="105" font-family="SF Pro Display, -apple-system, sans-serif" font-size="11" fill="rgba(255,255,255,0.9)" style="white-space: pre;">⭐ Importance Scoring</text>
+    <text x="20" y="120" font-family="SF Pro Display, -apple-system, sans-serif" font-size="11" fill="rgba(255,255,255,0.9)" style="white-space: pre;">🔗 Relationship Mapping</text>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, 1046.270874, 151.239319)">
+    <rect width="200" height="140" rx="15" fill="url(#triggerGradient)" filter="url(#shadow)"></rect>
+    <text x="100" y="30" text-anchor="middle" font-family="SF Pro Display, -apple-system, sans-serif" font-size="16" font-weight="600" fill="white" style="white-space: pre;">🚀 Smart Triggers</text>
+    <text x="100" y="50" text-anchor="middle" font-family="SF Pro Display, -apple-system, sans-serif" font-size="14" fill="rgba(255,255,255,0.9)" style="white-space: pre;">Proactive System</text>
+    <text x="20" y="75" font-family="SF Pro Display, -apple-system, sans-serif" font-size="11" fill="rgba(255,255,255,0.9)" style="white-space: pre;">📅 "On This Day"</text>
+    <text x="20" y="90" font-family="SF Pro Display, -apple-system, sans-serif" font-size="11" fill="rgba(255,255,255,0.9)" style="white-space: pre;">💝 Anniversary Alerts</text>
+    <text x="20" y="105" font-family="SF Pro Display, -apple-system, sans-serif" font-size="11" fill="rgba(255,255,255,0.9)" style="white-space: pre;">🌱 Seasonal Memories</text>
+    <text x="20" y="120" font-family="SF Pro Display, -apple-system, sans-serif" font-size="11" fill="rgba(255,255,255,0.9)" style="white-space: pre;">⚡ Real-time Delivery</text>
+  </g>
+  <defs>
+    <marker id="flowArrow" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#475569"></polygon>
+    </marker>
+  </defs>
+  <path d="M 344.409 219.484 L 444.409 219.484" stroke="#475569" stroke-width="3" fill="none" marker-end="url(#flowArrow)"></path>
+  <path d="M 644 220 L 744 220" stroke="#475569" stroke-width="3" fill="none" marker-end="url(#flowArrow)"></path>
+  <path d="M 946 220 L 1046 220" stroke="#475569" stroke-width="3" fill="none" marker-end="url(#flowArrow)"></path>
+  <g transform="matrix(1, 0, 0, 1, 94.444084, 384.118378)">
+    <text x="600" y="20" text-anchor="middle" font-family="SF Pro Display, -apple-system, sans-serif" font-size="20" font-weight="600" fill="#1e293b" style="white-space: pre;">Detailed Intelligence Pipeline</text>
+    <g transform="translate(0,50)">
+      <rect width="1200" height="140.474" rx="15" fill="rgba(15, 23, 42, 0.05)" stroke="#e2e8f0" stroke-width="1" style=""></rect>
+      <text x="20" y="20.042" font-family="SF Pro Display, -apple-system, sans-serif" font-size="16" font-weight="600" fill="#1e293b" style="white-space: pre; font-size: 16px;">💎 Memory Enrichment Process</text>
+      <g transform="translate(50,50)">
+        <circle cx="0" cy="0" r="25" fill="#3b82f6" filter="url(#shadow)"></circle>
+        <text x="0" y="5" text-anchor="middle" font-family="SF Pro Display, -apple-system, sans-serif" font-size="12" font-weight="600" fill="white" style="white-space: pre;">1</text>
+        <text x="0" y="45" text-anchor="middle" font-family="SF Pro Display, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#1e293b" style="white-space: pre;">Upload</text>
+        <text x="0" y="60" text-anchor="middle" font-family="SF Pro Display, -apple-system, sans-serif" font-size="10" fill="#64748b" style="white-space: pre;">Raw Media</text>
+        <text x="0" y="75" text-anchor="middle" font-family="SF Pro Display, -apple-system, sans-serif" font-size="10" fill="#64748b" style="white-space: pre;">+ Metadata</text>
+      </g>
+      <g transform="translate(250,50)">
+        <circle cx="0" cy="0" r="25" fill="#10b981" filter="url(#shadow)"></circle>
+        <text x="0" y="5" text-anchor="middle" font-family="SF Pro Display, -apple-system, sans-serif" font-size="12" font-weight="600" fill="white" style="white-space: pre;">2</text>
+        <text x="0" y="45" text-anchor="middle" font-family="SF Pro Display, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#1e293b" style="white-space: pre;">AI Process</text>
+        <text x="0" y="60" text-anchor="middle" font-family="SF Pro Display, -apple-system, sans-serif" font-size="10" fill="#64748b" style="white-space: pre;">Caption</text>
+        <text x="0" y="75" text-anchor="middle" font-family="SF Pro Display, -apple-system, sans-serif" font-size="10" fill="#64748b" style="white-space: pre;">Transcribe</text>
+      </g>
+      <g transform="translate(450,50)">
+        <circle cx="0" cy="0" r="25" fill="#f59e0b" filter="url(#shadow)"></circle>
+        <text x="0" y="5" text-anchor="middle" font-family="SF Pro Display, -apple-system, sans-serif" font-size="12" font-weight="600" fill="white" style="white-space: pre;">3</text>
+        <text x="0" y="45" text-anchor="middle" font-family="SF Pro Display, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#1e293b" style="white-space: pre;">Vectorize</text>
+        <text x="0" y="60" text-anchor="middle" font-family="SF Pro Display, -apple-system, sans-serif" font-size="10" fill="#64748b" style="white-space: pre;">Semantic</text>
+        <text x="0" y="75" text-anchor="middle" font-family="SF Pro Display, -apple-system, sans-serif" font-size="10" fill="#64748b" style="white-space: pre;">Embeddings</text>
+      </g>
+      <g transform="translate(650,50)">
+        <circle cx="0" cy="0" r="25" fill="#ef4444" filter="url(#shadow)"></circle>
+        <text x="0" y="5" text-anchor="middle" font-family="SF Pro Display, -apple-system, sans-serif" font-size="12" font-weight="600" fill="white" style="white-space: pre;">4</text>
+        <text x="0" y="45" text-anchor="middle" font-family="SF Pro Display, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#1e293b" style="white-space: pre;">Analyze</text>
+        <text x="0" y="60" text-anchor="middle" font-family="SF Pro Display, -apple-system, sans-serif" font-size="10" fill="#64748b" style="white-space: pre;">Proactive</text>
+        <text x="0" y="75" text-anchor="middle" font-family="SF Pro Display, -apple-system, sans-serif" font-size="10" fill="#64748b" style="white-space: pre;">Scoring</text>
+      </g>
+      <g transform="translate(850,50)">
+        <circle cx="0" cy="0" r="25" fill="#8b5cf6" filter="url(#shadow)"></circle>
+        <text x="0" y="5" text-anchor="middle" font-family="SF Pro Display, -apple-system, sans-serif" font-size="12" font-weight="600" fill="white" style="white-space: pre;">5</text>
+        <text x="0" y="45" text-anchor="middle" font-family="SF Pro Display, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#1e293b" style="white-space: pre;">Store</text>
+        <text x="0" y="60" text-anchor="middle" font-family="SF Pro Display, -apple-system, sans-serif" font-size="10" fill="#64748b" style="white-space: pre;">Enriched</text>
+        <text x="0" y="75" text-anchor="middle" font-family="SF Pro Display, -apple-system, sans-serif" font-size="10" fill="#64748b" style="white-space: pre;">Memory</text>
+      </g>
+      <g transform="translate(1050,50)">
+        <circle cx="0" cy="0" r="25" fill="#6366f1" filter="url(#shadow)"></circle>
+        <text x="0" y="5" text-anchor="middle" font-family="SF Pro Display, -apple-system, sans-serif" font-size="12" font-weight="600" fill="white" style="white-space: pre;">6</text>
+        <text x="0" y="45" text-anchor="middle" font-family="SF Pro Display, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#1e293b" style="white-space: pre;">Search</text>
+        <text x="0" y="60" text-anchor="middle" font-family="SF Pro Display, -apple-system, sans-serif" font-size="10" fill="#64748b" style="white-space: pre;">Semantic</text>
+        <text x="0" y="75" text-anchor="middle" font-family="SF Pro Display, -apple-system, sans-serif" font-size="10" fill="#64748b" style="white-space: pre;">Retrieval</text>
+      </g>
+      <path d="M 75 50 L 225 50" stroke="#64748b" stroke-width="2" fill="none" marker-end="url(#flowArrow)"></path>
+      <path d="M 275 50 L 425 50" stroke="#64748b" stroke-width="2" fill="none" marker-end="url(#flowArrow)"></path>
+      <path d="M 475 50 L 625 50" stroke="#64748b" stroke-width="2" fill="none" marker-end="url(#flowArrow)"></path>
+      <path d="M 675 50 L 825 50" stroke="#64748b" stroke-width="2" fill="none" marker-end="url(#flowArrow)"></path>
+      <path d="M 875 50 L 1025 50" stroke="#64748b" stroke-width="2" fill="none" marker-end="url(#flowArrow)"></path>
+    </g>
+  </g>
+  <g transform="translate(100,650)">
+    <text x="600" y="20" text-anchor="middle" font-family="SF Pro Display, -apple-system, sans-serif" font-size="20" font-weight="600" fill="#1e293b" style="white-space: pre;">Proactive Trigger Examples</text>
+    <g transform="translate(0,50)">
+      <rect x="0" y="0" width="280" height="120" rx="10" fill="rgba(59, 130, 246, 0.1)" stroke="#3b82f6" stroke-width="1"></rect>
+      <text x="20" y="25" font-family="SF Pro Display, -apple-system, sans-serif" font-size="14" font-weight="600" fill="#3b82f6" style="white-space: pre;">📅 "On This Day" Trigger</text>
+      <text x="20" y="45" font-family="SF Pro Display, -apple-system, sans-serif" font-size="11" fill="#475569" style="white-space: pre;">When: Daily at 9 AM</text>
+      <text x="20" y="60" font-family="SF Pro Display, -apple-system, sans-serif" font-size="11" fill="#475569" style="white-space: pre;">Logic: Same date, different year</text>
+      <text x="20" y="75" font-family="SF Pro Display, -apple-system, sans-serif" font-size="11" fill="#475569" style="white-space: pre;">Source: when_was_this field</text>
+      <text x="20" y="90" font-family="SF Pro Display, -apple-system, sans-serif" font-size="11" fill="#475569" style="white-space: pre;">Example: "Remember your 80th</text>
+      <text x="20" y="105" font-family="SF Pro Display, -apple-system, sans-serif" font-size="11" fill="#475569" style="white-space: pre;">birthday party? It was 3 years ago!"</text>
+      <rect x="300" y="0" width="280" height="120" rx="10" fill="rgba(239, 68, 68, 0.1)" stroke="#ef4444" stroke-width="1"></rect>
+      <text x="320" y="25" font-family="SF Pro Display, -apple-system, sans-serif" font-size="14" font-weight="600" fill="#ef4444" style="white-space: pre;">💝 Anniversary Trigger</text>
+      <text x="320" y="45" font-family="SF Pro Display, -apple-system, sans-serif" font-size="11" fill="#475569" style="white-space: pre;">When: Anniversary dates</text>
+      <text x="320" y="60" font-family="SF Pro Display, -apple-system, sans-serif" font-size="11" fill="#475569" style="white-space: pre;">Logic: Anniversary type detection</text>
+      <text x="320" y="75" font-family="SF Pro Display, -apple-system, sans-serif" font-size="11" fill="#475569" style="white-space: pre;">Types: Wedding, graduation, work</text>
+      <text x="320" y="90" font-family="SF Pro Display, -apple-system, sans-serif" font-size="11" fill="#475569" style="white-space: pre;">Example: "Happy anniversary!</text>
+      <text x="320" y="105" font-family="SF Pro Display, -apple-system, sans-serif" font-size="11" fill="#475569" style="white-space: pre;">Here's your beautiful wedding day."</text>
+      <rect x="600" y="0" width="280" height="120" rx="10" fill="rgba(16, 185, 129, 0.1)" stroke="#10b981" stroke-width="1"></rect>
+      <text x="620" y="25" font-family="SF Pro Display, -apple-system, sans-serif" font-size="14" font-weight="600" fill="#10b981" style="white-space: pre;">🎄 Seasonal Trigger</text>
+      <text x="620" y="45" font-family="SF Pro Display, -apple-system, sans-serif" font-size="11" fill="#475569" style="white-space: pre;">When: Seasonal relevance</text>
+      <text x="620" y="60" font-family="SF Pro Display, -apple-system, sans-serif" font-size="11" fill="#475569" style="white-space: pre;">Logic: Seasonal tag matching</text>
+      <text x="620" y="75" font-family="SF Pro Display, -apple-system, sans-serif" font-size="11" fill="#475569" style="white-space: pre;">Tags: Christmas, Halloween, summer</text>
+      <text x="620" y="90" font-family="SF Pro Display, -apple-system, sans-serif" font-size="11" fill="#475569" style="white-space: pre;">Example: "The holidays are here!</text>
+      <text x="620" y="105" font-family="SF Pro Display, -apple-system, sans-serif" font-size="11" fill="#475569" style="white-space: pre;">Remember decorating the tree?"</text>
+      <rect x="900" y="0" width="280" height="120" rx="10" fill="rgba(139, 92, 246, 0.1)" stroke="#8b5cf6" stroke-width="1"></rect>
+      <text x="920" y="25" font-family="SF Pro Display, -apple-system, sans-serif" font-size="14" font-weight="600" fill="#8b5cf6" style="white-space: pre;">🧠 Cinematic Experience</text>
+      <text x="920" y="45" font-family="SF Pro Display, -apple-system, sans-serif" font-size="11" fill="#475569" style="white-space: pre;">When: Trigger activated</text>
+      <text x="920" y="60" font-family="SF Pro Display, -apple-system, sans-serif" font-size="11" fill="#475569" style="white-space: pre;">Logic: Pre-built AI response</text>
+      <text x="920" y="75" font-family="SF Pro Display, -apple-system, sans-serif" font-size="11" fill="#475569" style="white-space: pre;">Features: Scenes, narration, timing</text>
+      <text x="920" y="90" font-family="SF Pro Display, -apple-system, sans-serif" font-size="11" fill="#475569" style="white-space: pre;">Delivery: WebSocket real-time</text>
+      <text x="920" y="105" font-family="SF Pro Display, -apple-system, sans-serif" font-size="11" fill="#475569" style="white-space: pre;">to patient interface</text>
+    </g>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, 600, 860.856506)">
+    <rect width="200" height="80" rx="15" fill="url(#experienceGradient)" filter="url(#shadow)"></rect>
+    <text x="100" y="25" text-anchor="middle" font-family="SF Pro Display, -apple-system, sans-serif" font-size="16" font-weight="600" fill="white" style="white-space: pre;">🎬 Patient Experience</text>
+    <text x="100" y="45" text-anchor="middle" font-family="SF Pro Display, -apple-system, sans-serif" font-size="12" fill="rgba(255,255,255,0.9)" style="white-space: pre;">Cinematic Memory Journey</text>
+    <text x="100" y="65" text-anchor="middle" font-family="SF Pro Display, -apple-system, sans-serif" font-size="12" fill="rgba(255,255,255,0.9)" style="white-space: pre;">With Synchronized Narration</text>
+  </g>
+  <path d="M 1104.57 291.879 C 1172.65 374.087 1070.53 575.874 798.205 897.238" stroke="#8b5cf6" stroke-width="3" fill="none" marker-end="url(#flowArrow)" stroke-dasharray="5,5" style=""></path>
+</svg>

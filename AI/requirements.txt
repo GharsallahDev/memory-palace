@@ -1,0 +1,25 @@
+# Core ML & Transformers
+torch==2.2.2
+transformers==4.41.2
+numpy==1.26.4
+safetensors
+accelerate
+
+# AI Services
+ollama
+
+# Vision (BLIP)
+Pillow
+
+# Embedding
+sentence-transformers==2.7.0
+
+# Face Recognition
+face-recognition
+
+# Web Framework & Server
+fastapi
+uvicorn[standard]
+python-dotenv
+httpx
+python-multipart

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Palace Hub - Setup</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px 0;
+        }
+
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            width: 90%;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+
+        .subtitle {
+            margin-bottom: 30px;
+            opacity: 0.9;
+            font-size: 1.2em;
+        }
+
+        .version {
+            background: rgba(0, 255, 0, 0.2);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+
+        #qrcode {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            margin: 20px 0;
+            display: inline-block;
+            min-height: 200px;
+        }
+
+        #qrcode img {
+            border-radius: 8px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .memory-stats {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 15px;
+            margin: 20px 0;
+        }
+
+        .stat-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+        }
+
+        .stat-number {
+            font-size: 2em;
+            font-weight: bold;
+            color: #4CAF50;
+        }
+
+        .hub-details {
+            background: rgba(0, 0, 0, 0.2);
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px 0;
+            font-family: monospace;
+            text-align: left;
+            line-height: 1.6;
+        }
+
+        .hub-status {
+            background: rgba(76, 175, 80, 0.2);
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid #4CAF50;
+        }
+
+        .error-message {
+            color: red;
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            font-weight: bold;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="error-box" class="error-message"></div>
+        <h1>🧠 Memory Palace Hub</h1>
+        <p class="subtitle">Family Memory Collection & AI System</p>
+        <div id="qrcode"><img id="qr-code-image" alt="Setup QR Code" /></div>
+        <div class="memory-stats">
+            <h3>📊 Family Memory Collection</h3>
+            <div class="stat-grid">
+                <div class="stat-item">
+                    <div class="stat-number" id="total-memories">0</div>
+                    <div>Memories</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" id="total-photos">0</div>
+                    <div>Photos</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" id="total-voices">0</div>
+                    <div>Stories</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" id="total-videos">0</div>
+                    <div>Videos</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" id="total-texts">0</div>
+                    <div>Texts</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" id="total-people">0</div>
+                    <div>People</div>
+                </div>
+            </div>
+        </div>
+        <div class="hub-details">
+            <strong>Hub Details:</strong><br>
+            📍 IP Address: <span id="hub-ip">Loading...</span><br>
+            🔌 Port: <span id="hub-port">Loading...</span><br>
+            🔑 Session: <span id="hub-session">Loading...</span><br>
+            🌐 URL: <span id="hub-url">Loading...</span>
+        </div>
+        <div class="hub-status">✅ Memory Palace Hub is running!</div>
+    </div>
+    <script>
+        async function setupDashboard() {
+            try {
+                const response = await fetch('/api/config');
+                if (!response.ok) throw new Error(`Server returned status ${response.status}`);
+                const config = await response.json();
+                const qrData = JSON.stringify({ serverIP: config.serverIP, port: config.port, authToken: config.authToken });
+                document.getElementById('qr-code-image').src = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${encodeURIComponent(qrData)}`;
+                document.getElementById('hub-ip').textContent = config.serverIP;
+                document.getElementById('hub-port').textContent = config.port;
+                document.getElementById('hub-session').textContent = `${config.authToken.substring(0, 8)}...`;
+                document.getElementById('hub-url').textContent = `http://${config.serverIP}:${config.port}`;
+            } catch (error) {
+                console.error("Error setting up dashboard:", error);
+                const errorBox = document.getElementById('error-box');
+                errorBox.style.display = 'block';
+                errorBox.textContent = 'Could not load hub configuration. Ensure the server is running and you are on the same network.';
+            }
+        }
+
+        function updateStats() {
+            fetch('/api/memories/stats')
+                .then(response => {
+                    if (!response.ok) throw new Error(`Stats endpoint returned status ${response.status}`);
+                    return response.json();
+                })
+                .then(data => {
+                    document.getElementById('total-memories').textContent = data.total || 0;
+                    document.getElementById('total-photos').textContent = data.photos || 0;
+                    document.getElementById('total-voices').textContent = data.voices || 0;
+                    document.getElementById('total-videos').textContent = data.videos || 0;
+                    document.getElementById('total-texts').textContent = data.texts || 0;
+                    document.getElementById('total-people').textContent = data.people || 0;
+                })
+                .catch(error => {
+                    console.warn('Stats update failed:', error.message);
+                });
+        }
+        document.addEventListener('DOMContentLoaded', () => {
+            setupDashboard();
+            updateStats();
+            setInterval(updateStats, 5000);
+        });
+    </script>
+</body>
+
+</html>

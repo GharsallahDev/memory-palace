@@ -1,0 +1,37 @@
+
+# Memory Palace specific
+data/memory_palace.db*
+uploads/*
+!uploads/.gitkeep
+.env
+logs/
+temp/
+
+# Python cache (for future microservice)
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# AI Models and cache
+models/
+*.onnx
+*.bin
+embeddings/

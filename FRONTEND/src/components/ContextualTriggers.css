@@ -1,0 +1,175 @@
+/* src/components/ContextualTriggers.css */
+
+.contextual-triggers {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    padding: 0 15px 0 15px;
+}
+
+.triggers-header {
+    margin-bottom: 40px;
+}
+
+.triggers-title {
+    font-size: 2rem;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.95);
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.triggers-subtitle {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 300;
+    line-height: 1.5;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* --- GRID LAYOUT --- */
+.triggers-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* Mobile: Single column */
+    gap: 15px;
+    margin-bottom: 40px;
+    /* Space before footer */
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 600px) {
+    .triggers-grid {
+        grid-template-columns: repeat(2, 1fr);
+        /* Tablet: 2x2 grid */
+        max-width: 700px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .triggers-grid {
+        grid-template-columns: repeat(4, 1fr);
+        /* Desktop: 1x4 grid */
+        max-width: 1200px;
+    }
+}
+
+/* --- CARD STYLES --- */
+.trigger-card {
+    position: relative;
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.trigger-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+}
+
+.trigger-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 15px;
+    gap: 12px;
+    text-align: left;
+}
+
+.trigger-icon {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.trigger-text {
+    flex: 1;
+    min-width: 0;
+}
+
+.trigger-title {
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.95);
+    margin: 0 0 4px 0;
+    letter-spacing: 0.5px;
+}
+
+.trigger-subtitle {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0;
+    font-weight: 400;
+}
+
+.trigger-arrow {
+    color: rgba(255, 255, 255, 0.7);
+    flex-shrink: 0;
+}
+
+.trigger-card:hover .trigger-icon {
+    background: rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 1);
+}
+
+.trigger-card:hover .trigger-arrow {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* --- FOOTER STYLES (RE-ADDED) --- */
+.triggers-footer {
+    text-align: center;
+}
+
+.footer-text {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 300;
+    opacity: 0.8;
+}
+
+/* --- ACCESSIBILITY --- */
+@media (prefers-contrast: high) {
+    .trigger-card {
+        border-color: rgba(255, 255, 255, 0.8);
+        background: rgba(0, 0, 0, 0.8);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    .trigger-card,
+    .trigger-icon,
+    .trigger-arrow {
+        transition: none;
+    }
+}

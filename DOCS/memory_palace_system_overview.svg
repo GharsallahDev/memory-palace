@@ -1,0 +1,131 @@
+<svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8fafc;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e2e8f0;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="iosGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1d4ed8;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="backendGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#047857;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="aiGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f59e0b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d97706;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="frontendGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#475569" />
+    </marker>
+    <marker id="arrowhead-red" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+        <polygon points="0 0, 10 3.5, 0 7" fill="#dc2626" />
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="800" fill="url(#bgGradient)"/>
+  
+  <!-- Title -->
+  <text x="600" y="50" text-anchor="middle" font-family="SF Pro Display, -apple-system, sans-serif" font-size="28" font-weight="600" fill="#1e293b">Memory Palace Ecosystem</text>
+  <text x="600" y="80" text-anchor="middle" font-family="SF Pro Display, -apple-system, sans-serif" font-size="16" fill="#64748b">Private, Family-Centered AI Memory System</text>
+  
+  <!-- Family Network Box -->
+  <rect x="50" y="120" width="1100" height="560" rx="20" fill="rgba(239, 246, 255, 0.8)" stroke="#bfdbfe" stroke-width="2" stroke-dasharray="8,4"/>
+  <text x="80" y="145" font-family="SF Pro Display, -apple-system, sans-serif" font-size="14" font-weight="600" fill="#1e40af">🏠 Private Family Network (Local LAN)</text>
+  
+  <!-- iOS App -->
+  <g transform="translate(100,180)">
+    <rect width="200" height="140" rx="15" fill="url(#iosGradient)" filter="url(#shadow)"/>
+    <text x="100" y="30" text-anchor="middle" font-family="SF Pro Display, -apple-system, sans-serif" font-size="16" font-weight="600" fill="white">📱 iOS App</text>
+    <text x="100" y="50" text-anchor="middle" font-family="SF Pro Display, -apple-system, sans-serif" font-size="14" fill="rgba(255,255,255,0.9)">Memory Collector</text>
+    
+    <!-- Features -->
+    <text x="20" y="75" font-family="SF Pro Display, -apple-system, sans-serif" font-size="12" fill="rgba(255,255,255,0.9)">• Photo/Video Upload</text>
+    <text x="20" y="90" font-family="SF Pro Display, -apple-system, sans-serif" font-size="12" fill="rgba(255,255,255,0.9)">• Voice Recording</text>
+    <text x="20" y="105" font-family="SF Pro Display, -apple-system, sans-serif" font-size="12" fill="rgba(255,255,255,0.9)">• Face Detection</text>
+    <text x="20" y="120" font-family="SF Pro Display, -apple-system, sans-serif" font-size="12" fill="rgba(255,255,255,0.9)">• People Management</text>
+  </g>
+  
+  <!-- Node.js Backend -->
+  <g transform="translate(500,180)">
+    <rect width="200" height="140" rx="15" fill="url(#backendGradient)" filter="url(#shadow)"/>
+    <text x="100" y="30" text-anchor="middle" font-family="SF Pro Display, -apple-system, sans-serif" font-size="16" font-weight="600" fill="white">🏗️ Node.js Hub</text>
+    <text x="100" y="50" text-anchor="middle" font-family="SF Pro Display, -apple-system, sans-serif" font-size="14" fill="rgba(255,255,255,0.9)">Memory Orchestrator</text>
+    
+    <!-- Features -->
+    <text x="20" y="75" font-family="SF Pro Display, -apple-system, sans-serif" font-size="12" fill="rgba(255,255,255,0.9)">• Family API Gateway</text>
+    <text x="20" y="90" font-family="SF Pro Display, -apple-system, sans-serif" font-size="12" fill="rgba(255,255,255,0.9)">• WebSocket Server</text>
+    <text x="20" y="105" font-family="SF Pro Display, -apple-system, sans-serif" font-size="12" fill="rgba(255,255,255,0.9)">• Background Worker</text>
+    <text x="20" y="120" font-family="SF Pro Display, -apple-system, sans-serif" font-size="12" fill="rgba(255,255,255,0.9)">• Local Database</text>
+  </g>
+  
+  <!-- FastAPI AI Service -->
+  <g transform="translate(500,370)">
+    <rect width="200" height="160" rx="15" fill="url(#aiGradient)" filter="url(#shadow)"/>
+    <text x="100" y="25" text-anchor="middle" font-family="SF Pro Display, -apple-system, sans-serif" font-size="16" font-weight="600" fill="white">🧠 AI Service</text>
+    <text x="100" y="45" text-anchor="middle" font-family="SF Pro Display, -apple-system, sans-serif" font-size="14" fill="rgba(255,255,255,0.9)">FastAPI + Gemma 3n</text>
+    
+    <!-- Gemma 3n Central -->
+    <rect x="50" y="55" width="100" height="30" rx="8" fill="rgba(255,255,255,0.2)" stroke="rgba(255,255,255,0.5)" stroke-width="1"/>
+    <text x="100" y="72" text-anchor="middle" font-family="SF Pro Display, -apple-system, sans-serif" font-size="11" font-weight="600" fill="white">Gemma 3n Director</text>
+    
+    <!-- AI Crew -->
+    <text x="20" y="100" font-family="SF Pro Display, -apple-system, sans-serif" font-size="11" fill="rgba(255,255,255,0.9)">• Whisper (Transcription)</text>
+    <text x="20" y="115" font-family="SF Pro Display, -apple-system, sans-serif" font-size="11" fill="rgba(255,255,255,0.9)">• BLIP (Vision)</text>
+    <text x="20" y="130" font-family="SF Pro Display, -apple-system, sans-serif" font-size="11" fill="rgba(255,255,255,0.9)">• TTS (Speech)</text>
+    <text x="20" y="145" font-family="SF Pro Display, -apple-system, sans-serif" font-size="11" fill="rgba(255,255,255,0.9)">• Embeddings &amp; Search</text>
+  </g>
+  
+  <!-- React Frontend -->
+  <g transform="translate(900,180)">
+    <rect width="200" height="140" rx="15" fill="url(#frontendGradient)" filter="url(#shadow)"/>
+    <text x="100" y="30" text-anchor="middle" font-family="SF Pro Display, -apple-system, sans-serif" font-size="16" font-weight="600" fill="white">💻 React Web</text>
+    <text x="100" y="50" text-anchor="middle" font-family="SF Pro Display, -apple-system, sans-serif" font-size="14" fill="rgba(255,255,255,0.9)">Memory Palace</text>
+    
+    <!-- Features -->
+    <text x="20" y="75" font-family="SF Pro Display, -apple-system, sans-serif" font-size="12" fill="rgba(255,255,255,0.9)">• Cinematic Experience</text>
+    <text x="20" y="90" font-family="SF Pro Display, -apple-system, sans-serif" font-size="12" fill="rgba(255,255,255,0.9)">• Voice Conversation</text>
+    <text x="20" y="105" font-family="SF Pro Display, -apple-system, sans-serif" font-size="12" fill="rgba(255,255,255,0.9)">• Proactive Triggers</text>
+    <text x="20" y="120" font-family="SF Pro Display, -apple-system, sans-serif" font-size="12" fill="rgba(255,255,255,0.9)">• Family Dashboard</text>
+  </g>
+  
+  <!-- Data Flow Arrows -->
+  
+  <!-- Upload Flow -->
+  <path d="M 300 240 Q 400 200 500 240" stroke="#475569" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="380" y="215" text-anchor="middle" font-family="SF Pro Display, -apple-system, sans-serif" font-size="11" fill="#475569">Upload Memories</text>
+  
+  <!-- Backend to AI -->
+  <path d="M 600 320 L 600 370" stroke="#475569" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="630" y="345" font-family="SF Pro Display, -apple-system, sans-serif" font-size="11" fill="#475569">AI Processing</text>
+  
+  <!-- Backend to Frontend -->
+  <path d="M 700 240 Q 800 200 900 240" stroke="#475569" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="800" y="215" text-anchor="middle" font-family="SF Pro Display, -apple-system, sans-serif" font-size="11" fill="#475569">Memory Access</text>
+  
+  <!-- Proactive Flow (Node -> React) -->
+  <path d="M 700 280 Q 800 320 900 280" stroke="#dc2626" stroke-width="2" fill="none" marker-end="url(#arrowhead-red)" stroke-dasharray="4,4"/>
+  <text x="800" y="335" text-anchor="middle" font-family="SF Pro Display, -apple-system, sans-serif" font-size="11" fill="#dc2626">Proactive Triggers</text>
+  
+  <!-- Key Features Box -->
+  <g transform="translate(100, 580)">
+    <rect width="1000" height="80" rx="10" fill="rgba(15, 23, 42, 0.05)" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="20" y="25" font-family="SF Pro Display, -apple-system, sans-serif" font-size="14" font-weight="600" fill="#1e293b">🔑 Key Architectural Features</text>
+    
+    <text x="30" y="45" font-family="SF Pro Display, -apple-system, sans-serif" font-size="12" fill="#475569">🔒 <tspan font-weight="600">Privacy-First</tspan>: All processing happens on local network</text>
+    <text x="30" y="60" font-family="SF Pro Display, -apple-system, sans-serif" font-size="12" fill="#475569">👨‍👩‍👧‍👦 <tspan font-weight="600">Family Ecosystem</tspan>: Distributed capture, centralized AI experience</text>
+    
+    <text x="520" y="45" font-family="SF Pro Display, -apple-system, sans-serif" font-size="12" fill="#475569">🧠 <tspan font-weight="600">Gemma 3n Director</tspan>: Orchestrates complete AI pipeline</text>
+    <text x="520" y="60" font-family="SF Pro Display, -apple-system, sans-serif" font-size="12" fill="#475569">⚡ <tspan font-weight="600">Real-time Intelligence</tspan>: Proactive triggers via WebSocket</text>
+  </g>
+  
+</svg>

@@ -1,0 +1,603 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6743949E2E198D8000641DF0 /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 6743949D2E198D8000641DF0 /* CodeScanner */; };
+		6743951E2E19C84D00641DF0 /* PhotosUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6743951D2E19C84D00641DF0 /* PhotosUI.framework */; };
+		6743955D2E19CBF500641DF0 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6743955C2E19CBF500641DF0 /* Photos.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		676DFBA92E188E310059CDEF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 676DFB932E188E2F0059CDEF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 676DFB9A2E188E2F0059CDEF;
+			remoteInfo = EmergencyMesh;
+		};
+		676DFBB32E188E320059CDEF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 676DFB932E188E2F0059CDEF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 676DFB9A2E188E2F0059CDEF;
+			remoteInfo = EmergencyMesh;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6743951D2E19C84D00641DF0 /* PhotosUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PhotosUI.framework; path = System/Library/Frameworks/PhotosUI.framework; sourceTree = SDKROOT; };
+		6743955C2E19CBF500641DF0 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		676DFB9B2E188E2F0059CDEF /* Memory Palace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Memory Palace.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		676DFBA82E188E310059CDEF /* Memory CollectorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Memory CollectorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		676DFBB22E188E320059CDEF /* Memory CollectorUMemory PalaceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Memory CollectorUMemory PalaceTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		676DFB9D2E188E2F0059CDEF /* MemoryPalace */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = MemoryPalace;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		676DFB982E188E2F0059CDEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6743955D2E19CBF500641DF0 /* Photos.framework in Frameworks */,
+				6743951E2E19C84D00641DF0 /* PhotosUI.framework in Frameworks */,
+				6743949E2E198D8000641DF0 /* CodeScanner in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		676DFBA52E188E310059CDEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		676DFBAF2E188E320059CDEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6743951C2E19C84D00641DF0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6743955C2E19CBF500641DF0 /* Photos.framework */,
+				6743951D2E19C84D00641DF0 /* PhotosUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		676DFB922E188E2F0059CDEF = {
+			isa = PBXGroup;
+			children = (
+				676DFB9D2E188E2F0059CDEF /* MemoryPalace */,
+				6743951C2E19C84D00641DF0 /* Frameworks */,
+				676DFB9C2E188E2F0059CDEF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		676DFB9C2E188E2F0059CDEF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				676DFB9B2E188E2F0059CDEF /* Memory Palace.app */,
+				676DFBA82E188E310059CDEF /* Memory CollectorTests.xctest */,
+				676DFBB22E188E320059CDEF /* Memory CollectorUMemory PalaceTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		676DFB9A2E188E2F0059CDEF /* Memory Palace */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 676DFBBC2E188E320059CDEF /* Build configuration list for PBXNativeTarget "Memory Palace" */;
+			buildPhases = (
+				676DFB972E188E2F0059CDEF /* Sources */,
+				676DFB982E188E2F0059CDEF /* Frameworks */,
+				676DFB992E188E2F0059CDEF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				676DFB9D2E188E2F0059CDEF /* MemoryPalace */,
+			);
+			name = "Memory Palace";
+			packageProductDependencies = (
+				6743949D2E198D8000641DF0 /* CodeScanner */,
+			);
+			productName = EmergencyMesh;
+			productReference = 676DFB9B2E188E2F0059CDEF /* Memory Palace.app */;
+			productType = "com.apple.product-type.application";
+		};
+		676DFBA72E188E310059CDEF /* Memory CollectorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 676DFBBF2E188E320059CDEF /* Build configuration list for PBXNativeTarget "Memory CollectorTests" */;
+			buildPhases = (
+				676DFBA42E188E310059CDEF /* Sources */,
+				676DFBA52E188E310059CDEF /* Frameworks */,
+				676DFBA62E188E310059CDEF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				676DFBAA2E188E310059CDEF /* PBXTargetDependency */,
+			);
+			name = "Memory CollectorTests";
+			packageProductDependencies = (
+			);
+			productName = EmergencyMeshTests;
+			productReference = 676DFBA82E188E310059CDEF /* Memory CollectorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		676DFBB12E188E320059CDEF /* Memory CollectorUMemory PalaceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 676DFBC22E188E320059CDEF /* Build configuration list for PBXNativeTarget "Memory CollectorUMemory PalaceTests" */;
+			buildPhases = (
+				676DFBAE2E188E320059CDEF /* Sources */,
+				676DFBAF2E188E320059CDEF /* Frameworks */,
+				676DFBB02E188E320059CDEF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				676DFBB42E188E320059CDEF /* PBXTargetDependency */,
+			);
+			name = "Memory CollectorUMemory PalaceTests";
+			packageProductDependencies = (
+			);
+			productName = EmergencyMeshUITests;
+			productReference = 676DFBB22E188E320059CDEF /* Memory CollectorUMemory PalaceTests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		676DFB932E188E2F0059CDEF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					676DFB9A2E188E2F0059CDEF = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					676DFBA72E188E310059CDEF = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 676DFB9A2E188E2F0059CDEF;
+					};
+					676DFBB12E188E320059CDEF = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 676DFB9A2E188E2F0059CDEF;
+					};
+				};
+			};
+			buildConfigurationList = 676DFB962E188E2F0059CDEF /* Build configuration list for PBXProject "Memory Palace" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 676DFB922E188E2F0059CDEF;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				674394902E198D3500641DF0 /* XCRemoteSwiftPackageReference "CodeScanner" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 676DFB9C2E188E2F0059CDEF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				676DFB9A2E188E2F0059CDEF /* Memory Palace */,
+				676DFBA72E188E310059CDEF /* Memory CollectorTests */,
+				676DFBB12E188E320059CDEF /* Memory CollectorUMemory PalaceTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		676DFB992E188E2F0059CDEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		676DFBA62E188E310059CDEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		676DFBB02E188E320059CDEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		676DFB972E188E2F0059CDEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		676DFBA42E188E310059CDEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		676DFBAE2E188E320059CDEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		676DFBAA2E188E310059CDEF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 676DFB9A2E188E2F0059CDEF /* Memory Palace */;
+			targetProxy = 676DFBA92E188E310059CDEF /* PBXContainerItemProxy */;
+		};
+		676DFBB42E188E320059CDEF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 676DFB9A2E188E2F0059CDEF /* Memory Palace */;
+			targetProxy = 676DFBB32E188E320059CDEF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		676DFBBA2E188E320059CDEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 64CQJH72M2;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		676DFBBB2E188E320059CDEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 64CQJH72M2;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		676DFBBD2E188E320059CDEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 64CQJH72M2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Memory Palace";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app needs camera access to scan QR setup codes.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app needs microphone access to record family stories.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This app needs photo library access to upload family memories.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.memory.palace;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		676DFBBE2E188E320059CDEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 64CQJH72M2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EmergencyMesh/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Memory Palace";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app needs camera access to scan QR setup codes.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app needs microphone access to record family stories.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This app needs photo library access to upload family memories.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.memory.palace;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		676DFBC02E188E320059CDEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 64CQJH72M2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.EmergencyMeshTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUMemory PalaceLT_PRODUCTS_DMemory PalaceR)/Memory Collector.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Memory Collector";
+			};
+			name = Debug;
+		};
+		676DFBC12E188E320059CDEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 64CQJH72M2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.EmergencyMeshTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUMemory PalaceLT_PRODUCTS_DMemory PalaceR)/Memory Collector.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Memory Collector";
+			};
+			name = Release;
+		};
+		676DFBC32E188E320059CDEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 64CQJH72M2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.EmergencyMeshUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EmergencyMesh;
+			};
+			name = Debug;
+		};
+		676DFBC42E188E320059CDEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 64CQJH72M2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.EmergencyMeshUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EmergencyMesh;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		676DFB962E188E2F0059CDEF /* Build configuration list for PBXProject "Memory Palace" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				676DFBBA2E188E320059CDEF /* Debug */,
+				676DFBBB2E188E320059CDEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		676DFBBC2E188E320059CDEF /* Build configuration list for PBXNativeTarget "Memory Palace" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				676DFBBD2E188E320059CDEF /* Debug */,
+				676DFBBE2E188E320059CDEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		676DFBBF2E188E320059CDEF /* Build configuration list for PBXNativeTarget "Memory CollectorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				676DFBC02E188E320059CDEF /* Debug */,
+				676DFBC12E188E320059CDEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		676DFBC22E188E320059CDEF /* Build configuration list for PBXNativeTarget "Memory CollectorUMemory PalaceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				676DFBC32E188E320059CDEF /* Debug */,
+				676DFBC42E188E320059CDEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		674394902E198D3500641DF0 /* XCRemoteSwiftPackageReference "CodeScanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/CodeScanner";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6743949D2E198D8000641DF0 /* CodeScanner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 674394902E198D3500641DF0 /* XCRemoteSwiftPackageReference "CodeScanner" */;
+			productName = CodeScanner;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 676DFB932E188E2F0059CDEF /* Project object */;
+}

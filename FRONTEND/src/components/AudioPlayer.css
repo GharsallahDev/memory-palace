@@ -1,0 +1,208 @@
+/* src/components/AudioPlayer.css */
+
+.voice-audio-player {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 12px 16px;
+    background: rgba(156, 39, 176, 0.08);
+    border: 1px solid rgba(156, 39, 176, 0.25);
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+    max-width: 340px;
+    transition: all 0.3s ease;
+}
+
+.voice-audio-player:hover {
+    background: rgba(156, 39, 176, 0.12);
+    border-color: rgba(156, 39, 176, 0.35);
+}
+
+.player-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.player-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    background: rgba(156, 39, 176, 0.2);
+    border-radius: 6px;
+    color: rgba(156, 39, 176, 0.9);
+    flex-shrink: 0;
+}
+
+.waveform-track {
+    flex: 1;
+    position: relative;
+    height: 28px;
+    cursor: pointer;
+    border-radius: 6px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.05);
+    min-width: 0;
+}
+
+.track-bg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    height: 100%;
+    padding: 0 6px;
+}
+
+.wave-bar {
+    width: 2px;
+    background: rgba(156, 39, 176, 0.4);
+    border-radius: 1px;
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+}
+
+.wave-bar.active {
+    animation: wave-pulse 1.2s ease-in-out infinite;
+}
+
+@keyframes wave-pulse {
+
+    0%,
+    100% {
+        transform: scaleY(0.7);
+        background: rgba(156, 39, 176, 0.4);
+    }
+
+    50% {
+        transform: scaleY(1.3);
+        background: rgba(156, 39, 176, 0.8);
+    }
+}
+
+.track-progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: linear-gradient(90deg,
+            rgba(156, 39, 176, 0.3),
+            rgba(103, 58, 183, 0.3));
+    border-radius: 6px;
+    transition: width 0.1s linear;
+    pointer-events: none;
+}
+
+.play-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    background: linear-gradient(135deg, #9c27b0, #673ab7);
+    border: none;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    flex-shrink: 0;
+}
+
+.play-btn:hover:not(:disabled) {
+    background: linear-gradient(135deg, #ab47bc, #7b1fa2);
+    transform: scale(1.05);
+}
+
+.play-btn:disabled {
+    background: rgba(255, 255, 255, 0.1);
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.time-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    font-family: 'SF Mono', 'Monaco', 'Consolas', monospace;
+    color: rgba(156, 39, 176, 0.9);
+    font-weight: 500;
+    width: 100%;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .voice-audio-player {
+        max-width: 100%;
+        padding: 10px 12px;
+    }
+
+    .player-row {
+        gap: 8px;
+    }
+
+    .player-icon {
+        width: 24px;
+        height: 24px;
+    }
+
+    .player-icon svg {
+        width: 14px;
+        height: 14px;
+    }
+
+    .waveform-track {
+        height: 24px;
+    }
+
+    .wave-bar {
+        width: 2px;
+    }
+
+    .play-btn {
+        width: 24px;
+        height: 24px;
+    }
+
+    .play-btn svg {
+        width: 12px;
+        height: 12px;
+    }
+
+    .time-info {
+        font-size: 0.7rem;
+    }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+    .wave-bar.active {
+        animation: none;
+    }
+
+    .voice-audio-player,
+    .play-btn {
+        transition: none;
+    }
+}
+
+/* High contrast mode */
+@media (prefers-contrast: high) {
+    .voice-audio-player {
+        background: rgba(0, 0, 0, 0.8);
+        border: 2px solid rgba(156, 39, 176, 0.8);
+    }
+
+    .player-icon {
+        background: rgba(156, 39, 176, 0.8);
+        color: white;
+    }
+
+    .track-bg {
+        background: rgba(255, 255, 255, 0.2);
+    }
+}

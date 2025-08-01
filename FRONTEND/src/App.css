@@ -1,0 +1,63 @@
+/* src/App.css */
+.app {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background: #000;
+  overflow: hidden;
+}
+
+/* Re-enable cursor for interactive elements */
+button,
+[role="button"],
+.clickable {
+  cursor: pointer !important;
+}
+
+/* Accessibility - ensure focus is visible when navigating with keyboard */
+button:focus-visible,
+div[tabindex]:focus-visible {
+  outline: 3px solid #9C27B0;
+  outline-offset: 2px;
+}
+
+/* Ensure full screen experience */
+.app>* {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Smooth transitions between screens */
+.app {
+  transition: all 0.3s ease;
+}
+
+/* Touch feedback for mobile */
+@media (hover: none) and (pointer: coarse) {
+  .app {
+    cursor: auto;
+  }
+
+  button,
+  [role="button"],
+  .clickable {
+    cursor: pointer;
+  }
+}
+
+/* High contrast mode */
+@media (prefers-contrast: high) {
+  .app {
+    background: #000;
+  }
+}
+
+/* Print styles (hide everything) */
+@media print {
+  .app {
+    display: none;
+  }
+}

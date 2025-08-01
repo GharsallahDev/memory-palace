@@ -1,0 +1,170 @@
+<svg viewBox="0 0 1200 900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e293b;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="gemmaGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="gemmaCoreGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#fcd34d;stop-opacity:1" />
+      <stop offset="70%" style="stop-color:#f59e0b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d97706;stop-opacity:1" />
+    </radialGradient>
+    <linearGradient id="whisperGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1d4ed8;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="blipGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#047857;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="ttsGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="embeddingGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ef4444;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#dc2626;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-opacity="0.4"/>
+    </filter>
+    <marker id="arrowGold" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#fbbf24" />
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="900" fill="url(#bgGradient)"/>
+  
+  <!-- Title -->
+  <text x="600" y="50" text-anchor="middle" font-family="SF Pro Display, -apple-system, sans-serif" font-size="32" font-weight="700" fill="#fbbf24">Gemma 3n AI Orchestration</text>
+  <text x="600" y="80" text-anchor="middle" font-family="SF Pro Display, -apple-system, sans-serif" font-size="16" fill="#94a3b8">Director + Specialized AI Crew Architecture</text>
+  
+  <!-- Central Gemma 3n Director -->
+  <g transform="translate(600,450)">
+    <!-- Outer glow ring -->
+    <circle cx="0" cy="0" r="140" fill="none" stroke="url(#gemmaGradient)" stroke-width="3" opacity="0.6" filter="url(#glow)"/>
+    <circle cx="0" cy="0" r="130" fill="none" stroke="url(#gemmaGradient)" stroke-width="2" opacity="0.4" filter="url(#glow)"/>
+    
+    <!-- Core circle -->
+    <circle cx="0" cy="0" r="100" fill="url(#gemmaCoreGradient)" filter="url(#shadow)"/>
+    
+    <!-- Central icon -->
+    <text x="0" y="-15" text-anchor="middle" font-family="SF Pro Display, -apple-system, sans-serif" font-size="24">🧠</text>
+    <text x="0" y="10" text-anchor="middle" font-family="SF Pro Display, -apple-system, sans-serif" font-size="18" font-weight="700" fill="#0f172a">Gemma 3n</text>
+    <text x="0" y="30" text-anchor="middle" font-family="SF Pro Display, -apple-system, sans-serif" font-size="14" font-weight="600" fill="#0f172a">Director</text>
+    
+    <!-- Orbital indicators -->
+    <circle cx="0" cy="0" r="200" fill="none" stroke="rgba(251, 191, 36, 0.3)" stroke-width="1" stroke-dasharray="5,5"/>
+    <circle cx="0" cy="0" r="320" fill="none" stroke="rgba(251, 191, 36, 0.2)" stroke-width="1" stroke-dasharray="8,8"/>
+  </g>
+  
+  <!-- AI Crew Members -->
+  
+  <!-- Whisper (Top Left) -->
+  <g transform="translate(300,250)">
+    <circle cx="0" cy="0" r="70" fill="url(#whisperGradient)" filter="url(#shadow)"/>
+    <text x="0" y="-10" text-anchor="middle" font-family="SF Pro Display, -apple-system, sans-serif" font-size="20">🎤</text>
+    <text x="0" y="10" text-anchor="middle" font-family="SF Pro Display, -apple-system, sans-serif" font-size="14" font-weight="600" fill="white">Whisper</text>
+    <text x="0" y="25" text-anchor="middle" font-family="SF Pro Display, -apple-system, sans-serif" font-size="11" fill="rgba(255,255,255,0.9)">Audio → Text</text>
+  </g>
+  
+  <!-- BLIP (Top Right) -->
+  <g transform="translate(900,250)">
+    <circle cx="0" cy="0" r="70" fill="url(#blipGradient)" filter="url(#shadow)"/>
+    <text x="0" y="-10" text-anchor="middle" font-family="SF Pro Display, -apple-system, sans-serif" font-size="20">👁️</text>
+    <text x="0" y="10" text-anchor="middle" font-family="SF Pro Display, -apple-system, sans-serif" font-size="14" font-weight="600" fill="white">BLIP</text>
+    <text x="0" y="25" text-anchor="middle" font-family="SF Pro Display, -apple-system, sans-serif" font-size="11" fill="rgba(255,255,255,0.9)">Vision → Text</text>
+  </g>
+  
+  <!-- TTS (Bottom Left) -->
+  <g transform="translate(300,650)">
+    <circle cx="0" cy="0" r="70" fill="url(#ttsGradient)" filter="url(#shadow)"/>
+    <text x="0" y="-10" text-anchor="middle" font-family="SF Pro Display, -apple-system, sans-serif" font-size="20">🗣️</text>
+    <text x="0" y="10" text-anchor="middle" font-family="SF Pro Display, -apple-system, sans-serif" font-size="14" font-weight="600" fill="white">TTS</text>
+    <text x="0" y="25" text-anchor="middle" font-family="SF Pro Display, -apple-system, sans-serif" font-size="11" fill="rgba(255,255,255,0.9)">Text → Audio</text>
+  </g>
+  
+  <!-- Embeddings (Bottom Right) -->
+  <g transform="translate(900,650)">
+    <circle cx="0" cy="0" r="70" fill="url(#embeddingGradient)" filter="url(#shadow)"/>
+    <text x="0" y="-10" text-anchor="middle" font-family="SF Pro Display, -apple-system, sans-serif" font-size="20">🔍</text>
+    <text x="0" y="10" text-anchor="middle" font-family="SF Pro Display, -apple-system, sans-serif" font-size="14" font-weight="600" fill="white">Embeddings</text>
+    <text x="0" y="25" text-anchor="middle" font-family="SF Pro Display, -apple-system, sans-serif" font-size="11" fill="rgba(255,255,255,0.9)">Semantic Search</text>
+  </g>
+
+  <!-- Connections from Crew to Gemma Core -->
+  <path d="M 350 290 Q 450 350 520 400" stroke="#fbbf24" stroke-width="2" fill="none" opacity="0.7" marker-end="url(#arrowGold)"/>
+  <path d="M 850 290 Q 750 350 680 400" stroke="#fbbf24" stroke-width="2" fill="none" opacity="0.7" marker-end="url(#arrowGold)"/>
+  <path d="M 350 610 Q 450 550 520 500" stroke="#fbbf24" stroke-width="2" fill="none" opacity="0.7" marker-end="url(#arrowGold)"/>
+  <path d="M 850 610 Q 750 550 680 500" stroke="#fbbf24" stroke-width="2" fill="none" opacity="0.7" marker-end="url(#arrowGold)"/>
+
+  <!-- Input Flow (Left Side) -->
+  <g transform="translate(20, 120)">
+    <rect width="180" height="120" rx="10" fill="rgba(59, 130, 246, 0.1)" stroke="#3b82f6" stroke-width="1"/>
+    <text x="90" y="20" text-anchor="middle" font-family="SF Pro Display, -apple-system, sans-serif" font-size="14" font-weight="600" fill="#3b82f6">📥 Input Processing</text>
+    
+    <text x="15" y="45" font-family="SF Pro Display, -apple-system, sans-serif" font-size="11" fill="#cbd5e1">• Voice messages</text>
+    <text x="15" y="60" font-family="SF Pro Display, -apple-system, sans-serif" font-size="11" fill="#cbd5e1">• Photo uploads</text>
+    <text x="15" y="75" font-family="SF Pro Display, -apple-system, sans-serif" font-size="11" fill="#cbd5e1">• Video content</text>
+    <text x="15" y="90" font-family="SF Pro Display, -apple-system, sans-serif" font-size="11" fill="#cbd5e1">• Chat queries</text>
+    <text x="15" y="105" font-family="SF Pro Display, -apple-system, sans-serif" font-size="11" fill="#cbd5e1">• Memory analysis</text>
+  </g>
+  
+  <!-- Output Flow (Right Side) -->
+  <g transform="translate(1000, 120)">
+    <rect width="180" height="120" rx="10" fill="rgba(139, 92, 246, 0.1)" stroke="#8b5cf6" stroke-width="1"/>
+    <text x="90" y="20" text-anchor="middle" font-family="SF Pro Display, -apple-system, sans-serif" font-size="14" font-weight="600" fill="#8b5cf6">📤 Output Generation</text>
+    
+    <text x="15" y="45" font-family="SF Pro Display, -apple-system, sans-serif" font-size="11" fill="#cbd5e1">• Narrative responses</text>
+    <text x="15" y="60" font-family="SF Pro Display, -apple-system, sans-serif" font-size="11" fill="#cbd5e1">• Cinematic shows</text>
+    <text x="15" y="75" font-family="SF Pro Display, -apple-system, sans-serif" font-size="11" fill="#cbd5e1">• Proactive triggers</text>
+    <text x="15" y="90" font-family="SF Pro Display, -apple-system, sans-serif" font-size="11" fill="#cbd5e1">• Speech synthesis</text>
+    <text x="15" y="105" font-family="SF Pro Display, -apple-system, sans-serif" font-size="11" fill="#cbd5e1">• Memory insights</text>
+  </g>
+  
+  <!-- Gemma 3n Core Responsibilities -->
+  <g transform="translate(400, 720)">
+    <rect width="400" height="160" rx="15" fill="rgba(251, 191, 36, 0.1)" stroke="#fbbf24" stroke-width="1"/>
+    <text x="200" y="20" text-anchor="middle" font-family="SF Pro Display, -apple-system, sans-serif" font-size="14" font-weight="600" fill="#fbbf24">🎼 Gemma 3n Director Responsibilities</text>
+    
+    <!-- Column 1 -->
+    <text x="20" y="45" font-family="SF Pro Display, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#cbd5e1">Conversation:</text>
+    <text x="25" y="60" font-family="SF Pro Display, -apple-system, sans-serif" font-size="10" fill="#94a3b8">• Determine response type</text>
+    <text x="25" y="72" font-family="SF Pro Display, -apple-system, sans-serif" font-size="10" fill="#94a3b8">• Understand patient context</text>
+    <text x="25" y="84" font-family="SF Pro Display, -apple-system, sans-serif" font-size="10" fill="#94a3b8">• Generate empathetic responses</text>
+    
+    <text x="20" y="104" font-family="SF Pro Display, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#cbd5e1">Proactive:</text>
+    <text x="25" y="119" font-family="SF Pro Display, -apple-system, sans-serif" font-size="10" fill="#94a3b8">• Analyze for anniversary triggers</text>
+    <text x="25" y="131" font-family="SF Pro Display, -apple-system, sans-serif" font-size="10" fill="#94a3b8">• Generate seasonal prompts</text>
+
+    <!-- Column 2 -->
+    <text x="210" y="45" font-family="SF Pro Display, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#cbd5e1">Orchestration:</text>
+    <text x="215" y="60" font-family="SF Pro Display, -apple-system, sans-serif" font-size="10" fill="#94a3b8">• Semantic memory retrieval</text>
+    <text x="215" y="72" font-family="SF Pro Display, -apple-system, sans-serif" font-size="10" fill="#94a3b8">• Context-aware recommendations</text>
+    <text x="215" y="84" font-family="SF Pro Display, -apple-system, sans-serif" font-size="10" fill="#94a3b8">• Emotional tone analysis</text>
+
+    <text x="210" y="104" font-family="SF Pro Display, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#cbd5e1">Experience:</text>
+    <text x="215" y="119" font-family="SF Pro Display, -apple-system, sans-serif" font-size="10" fill="#94a3b8">• Build cinematic sequences</text>
+    <text x="215" y="131" font-family="SF Pro Display, -apple-system, sans-serif" font-size="10" fill="#94a3b8">• Coordinate scene transitions</text>
+  </g>
+  
+  <!-- Ollama Badge -->
+  <g transform="translate(20,20)">
+    <rect width="180" height="50" rx="25" fill="rgba(16, 185, 129, 0.2)" stroke="#10b981" stroke-width="1"/>
+    <text x="90" y="22" text-anchor="middle" font-family="SF Pro Display, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#10b981">🦙 Powered by Ollama</text>
+    <text x="90" y="37" text-anchor="middle" font-family="SF Pro Display, -apple-system, sans-serif" font-size="10" fill="#6ee7b7">Optimized Local Inference</text>
+  </g>
+  
+</svg>
